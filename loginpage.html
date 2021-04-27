@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="css\fontawesome-free-5.10.1-web\css\all.css">
+	<link rel="stylesheet" href="style_log.css">
+
+</head>
+<body>
+
+
+
+<form class="box" action="https://theliterarysociety.sanskrutidas.repl.co/">
+	<h1>Login</h1>
+	<input type="text" name="user" value="" placeholder="Username" required>
+	<input type="password" name="pass" value="" placeholder="Password" required>
+	<button type="submit" onclick="return check(this.form)">Login</button>
+
+</form>
+
+<script language="javascript">
+	function check(form)
+	{
+	
+	if(form.user.value == "CET" && form.pass.value == "123")
+	{
+		return true;
+			
+	}
+	else
+	{
+		alert("Error Password or Username")
+		return false;
+	}
+	}
+			  </script>
+</body>
+</html>
